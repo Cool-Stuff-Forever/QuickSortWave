@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 node filter=lfs diff=lfs merge=lfs -text
+=======
+Bot/** filter=lfs diff=lfs merge=lfs -text
+>>>>>>> main
