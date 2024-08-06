@@ -9,5 +9,8 @@
         <module name="qsw-bot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bot" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
