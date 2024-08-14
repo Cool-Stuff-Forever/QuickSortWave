@@ -1,5 +1,6 @@
 package org.csf;
 
+import org.csf.API.TestController;
 import org.csf.Service.SortService;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -31,6 +32,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     public boolean echo = false; // переменная для включения эхо-режима
     public SendMessage sendMessage = new SendMessage(); // объект класса сообщений (может быть фото)
+    public TestController testController = new TestController();
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -49,6 +51,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                 case "/echo" -> {
                     sendMessage.setText("Напиши мне что-нибудь: ");
                     echo = true;
+                    testController.sendBotMessage(update.getMessage().getChatId().toString());
                 }
                 case "/date" -> sendMessage.setText(date);
             }

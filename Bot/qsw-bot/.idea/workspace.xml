@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" afterDir="false" />
-    </list>
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,9 +48,9 @@
     "Maven.Unknown [install].executor": "Run",
     "Maven.Unknown [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "10-creating-service-sort",
+    "git-widget-placeholder": "20-test-api",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/chewedmole/Documents/Projects Java/ABST",
+    "last_opened_file_path": "/home/chewedmole/Projects/QuickSortWave/Bot/qsw-bot",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.39310345",
