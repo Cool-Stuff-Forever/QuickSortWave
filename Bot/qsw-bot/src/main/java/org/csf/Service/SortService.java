@@ -1,7 +1,10 @@
 package org.csf.Service;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 
 /**
@@ -56,7 +59,16 @@ public class SortService {
     //v--------Методы для обработки запроса--------v
 
     public void helpParamMethod(String message){
-        sendMessage.setText("help");
+        sendMessage.setText("""
+                QuickSortWave - удобный сортировщик файлов.
+                Для использования команды /sort существуют следующие параметры:
+                -help - выводит информацию о параметре уровня
+                -date - сортировка файлов по дате
+                -type - выборочная сортировка по типу файла(фото, видео и т.д.)
+                -extension - выборочная сортировка по расширению файла
+                -size - выборочная сортировка по размеру файла
+                *для информации по параметрам второго уровня, используйте 1 параметр(~~help~~) и напишите -help*""");
+    //    sendMessage.setParseMode(ParseMode.MARKDOWNV2);
     }
 
     public void dateParamMethod(String message){
