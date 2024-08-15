@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="gitignore added and lil improvements are done">
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="-help parameter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723599108064</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-help parameter">
+      <option name="closed" value="true" />
+      <created>1723654367484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723654367484</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -122,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some lil stuff related with HTTP" />
     <MESSAGE value="gitignore added and lil improvements are done" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore added and lil improvements are done" />
+    <MESSAGE value="-help parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="-help parameter" />
   </component>
 </project>

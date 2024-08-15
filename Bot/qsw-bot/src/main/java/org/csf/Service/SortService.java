@@ -59,16 +59,21 @@ public class SortService {
     //v--------Методы для обработки запроса--------v
 
     public void helpParamMethod(String message){
-        sendMessage.setText("""
-                QuickSortWave - удобный сортировщик файлов.
+
+        String text = """
+                *QuickSortWave* - удобный сортировщик файлов
                 Для использования команды /sort существуют следующие параметры:
                 -help - выводит информацию о параметре уровня
                 -date - сортировка файлов по дате
                 -type - выборочная сортировка по типу файла(фото, видео и т.д.)
                 -extension - выборочная сортировка по расширению файла
                 -size - выборочная сортировка по размеру файла
-                *для информации по параметрам второго уровня, используйте 1 параметр(~~help~~) и напишите -help*""");
-    //    sendMessage.setParseMode(ParseMode.MARKDOWNV2);
+                _для информации по параметрам второго уровня используйте 1 параметр(~help~) и напишите -help_
+                """;
+
+        sendMessage.setText(buildTheMessage(text));
+
+
     }
 
     public void dateParamMethod(String message){
@@ -85,5 +90,12 @@ public class SortService {
 
     public void sizeParamMethod(String message){
         sendMessage.setText("size");
+    }
+
+    public String buildTheMessage(String text){
+        return text.replaceAll("\\.", "\\\\.")
+                .replaceAll("\\(","\\\\(")
+                .replaceAll("\\)", "\\\\)")
+                .replaceAll("-", "\\\\-");
     }
 }
