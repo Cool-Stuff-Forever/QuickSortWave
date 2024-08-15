@@ -1,11 +1,9 @@
 package org.csf.Service;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.Update;
 
 /**
  * Сервис для обработки параметров команды типа "/sort"
@@ -13,10 +11,11 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 @Data
 @RequiredArgsConstructor
 public class SortService {
-    public String param1;
-    public String param2;
-    protected final String message; // отправленное сообщение
-    protected final SendMessage sendMessage; // ответ бота
+    public String param1; //параметр первого уровня
+    public String param2; //параметр второго уровня
+    protected final String message; //отправленное сообщение
+    protected final SendMessage sendMessage; //ответ бота
+    protected final Update update; //вся информация из сообщения
 
     /**
      * Определение параметров
@@ -45,11 +44,11 @@ public class SortService {
         this.defineParams();
         if (param1 != null){
             switch (param1){
-                case "-help" -> this.helpParamMethod(message);
-                case "-date" -> this.dateParamMethod(message);
-                case "-type" -> this.typeParamMethod(message);
-                case "-extension" -> this.extensionParamMethod(message);
-                case "-size" -> this.sizeParamMethod(message);
+                case "-help" -> this.helpParamMethod(update);
+                case "-date" -> this.dateParamMethod(update);
+                case "-type" -> this.typeParamMethod(update);
+                case "-extension" -> this.extensionParamMethod(update);
+                case "-size" -> this.sizeParamMethod(update);
             }
         } else {
             sendMessage.setText("Err");
@@ -58,8 +57,11 @@ public class SortService {
 
     //v--------Методы для обработки запроса--------v
 
-    public void helpParamMethod(String message){
-
+    /**
+     * Помощь вв использовании параметров
+     * @param update - обновление с полной информацией
+     */
+    public void helpParamMethod(Update update){
         String text = """
                 *QuickSortWave* - удобный сортировщик файлов
                 Для использования команды /sort существуют следующие параметры:
@@ -72,26 +74,29 @@ public class SortService {
                 """;
 
         sendMessage.setText(buildTheMessage(text));
-
-
     }
 
-    public void dateParamMethod(String message){
+    public void dateParamMethod(Update update){
         sendMessage.setText("date");
     }
 
-    public void typeParamMethod(String message){
+    public void typeParamMethod(Update update){
         sendMessage.setText("type");
     }
 
-    public void extensionParamMethod(String message){
+    public void extensionParamMethod(Update update){
         sendMessage.setText("extension");
     }
 
-    public void sizeParamMethod(String message){
+    public void sizeParamMethod(Update update){
         sendMessage.setText("size");
     }
 
+    /**
+     * Метод простой обработки сообщений
+     * @param text неотформатированный текст
+     * @return готовое сообщение
+     */
     public String buildTheMessage(String text){
         return text.replaceAll("\\.", "\\\\.")
                 .replaceAll("\\(","\\\\(")

@@ -49,23 +49,23 @@ public class TelegramBot extends TelegramLongPollingBot {
         sendMessage.enableMarkdown(true);
         sendMessage.setParseMode(ParseMode.MARKDOWNV2);
 
-        SortService sortService = new SortService(message.getText(), sendMessage);
+        SortService sortService = new SortService(message.getText(), sendMessage, update);
 
         if (message.isCommand()){
             switch (message.getText()){
-                case "/start" -> sendMessage.setText("Бот готов к работе!");
+                case "/start" -> sendMessage.setText("Бот готов к работе\\!");
                 case "/echo" -> {
-                    sendMessage.setText("Напиши мне что-нибудь: ");
+                    sendMessage.setText("Напиши мне что\\-нибудь: ");
                     echo = true;
                     testController.sendBotMessage(update.getMessage().getChatId().toString());
                 }
-                case "/date" -> sendMessage.setText(date);
+                case "/date" -> sendMessage.setText(date); //вывод даты
             }
         } else if (echo) {
             sendMessage.setText(text);
             echo = false;
         }
-
+        //Обработка команды /sort
         if (message.getText().startsWith("/sort")) {
             sortService.paramCheck();
             sendMessage = sortService.getSendMessage();
