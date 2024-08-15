@@ -46,6 +46,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         Message message = update.getMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.enableMarkdown(true);
+        sendMessage.setParseMode(ParseMode.MARKDOWNV2);
 
         SortService sortService = new SortService(message.getText(), sendMessage);
 
