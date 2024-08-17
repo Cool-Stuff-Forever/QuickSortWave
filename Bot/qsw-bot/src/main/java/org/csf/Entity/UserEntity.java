@@ -1,4 +1,4 @@
-package Entity;
+package org.csf.Entity;
 
 import javax.persistence.*;
 import lombok.Data;

@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.csf.API.TestController;
+import org.csf.Service.ConnectService;
 import org.csf.Service.SortService;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
@@ -50,6 +51,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         sendMessage.setParseMode(ParseMode.MARKDOWNV2);
 
         SortService sortService = new SortService(message.getText(), sendMessage, update);
+        ConnectService connectService = new ConnectService(message.getChatId().toString());
 
         if (message.isCommand()){
             switch (message.getText()){
@@ -60,6 +62,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                     testController.sendBotMessage(update.getMessage().getChatId().toString());
                 }
                 case "/date" -> sendMessage.setText(date); //вывод даты
+                case "/connect" -> connectService.generateKey();
             }
         } else if (echo) {
             sendMessage.setText(text);

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="-help parameter">
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="comments and improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/API/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/API/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,22 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Maven.Unknown [clean].executor": "Run",
-    "Maven.Unknown [install].executor": "Run",
-    "Maven.Unknown [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/chewedmole/Projects/QuickSortWave/Bot/qsw-bot",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.39310345",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/chewedmole/Projects/QuickSortWave/Bot/qsw-bot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39310345&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -115,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723654367484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="comments and improvements">
+      <option name="closed" value="true" />
+      <created>1723737397530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723737397530</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -132,6 +138,7 @@
     <MESSAGE value="some lil stuff related with HTTP" />
     <MESSAGE value="gitignore added and lil improvements are done" />
     <MESSAGE value="-help parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="-help parameter" />
+    <MESSAGE value="comments and improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments and improvements" />
   </component>
 </project>

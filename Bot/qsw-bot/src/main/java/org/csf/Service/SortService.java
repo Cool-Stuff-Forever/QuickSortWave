@@ -1,6 +1,7 @@
 package org.csf.Service;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -8,9 +9,10 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 /**
  * Сервис для обработки параметров команды типа "/sort"
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @RequiredArgsConstructor
-public class SortService {
+public class SortService extends Service{
     public String param1; //параметр первого уровня
     public String param2; //параметр второго уровня
     protected final String message; //отправленное сообщение
@@ -92,15 +94,4 @@ public class SortService {
         sendMessage.setText("size");
     }
 
-    /**
-     * Метод простой обработки сообщений
-     * @param text неотформатированный текст
-     * @return готовое сообщение
-     */
-    public String buildTheMessage(String text){
-        return text.replaceAll("\\.", "\\\\.")
-                .replaceAll("\\(","\\\\(")
-                .replaceAll("\\)", "\\\\)")
-                .replaceAll("-", "\\\\-");
-    }
 }
