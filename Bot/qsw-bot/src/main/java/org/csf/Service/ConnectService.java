@@ -3,13 +3,14 @@ package org.csf.Service;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.codec.digest.DigestUtils;
 
 @Data
 @RequiredArgsConstructor
 public class ConnectService{
-    protected final String password;
+    protected final String chatId;
 
-    public void generateKey(){
-    //TODO create this method
+    public String generateKey(String chatId){
+        return DigestUtils.sha256Hex(chatId);
     }
 }

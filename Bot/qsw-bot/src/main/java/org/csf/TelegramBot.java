@@ -62,7 +62,10 @@ public class TelegramBot extends TelegramLongPollingBot {
                     testController.sendBotMessage(update.getMessage().getChatId().toString());
                 }
                 case "/date" -> sendMessage.setText(date); //вывод даты
-                case "/connect" -> connectService.generateKey();
+                case "/connect" -> {
+                    sendMessage.setText("CONN");
+                    System.out.println(connectService.generateKey(chatId));
+                }
             }
         } else if (echo) {
             sendMessage.setText(text);
