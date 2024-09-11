@@ -2,6 +2,7 @@ package org.csf;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.csf.API.TestController;
 import org.csf.Service.ConnectService;
@@ -37,7 +38,9 @@ public class TelegramBot extends TelegramLongPollingBot {
     public boolean echo = false; // переменная для включения эхо-режима
     public SendMessage sendMessage = new SendMessage(); // объект класса сообщений (может быть фото)
     public TestController testController = new TestController();
+    public ConnectService connectService;
 
+    @SneakyThrows
     @Override
     public void onUpdateReceived(Update update) {
         String chatId = update.getMessage().getChatId().toString(); // id чата, куда отправляется ответ
@@ -50,7 +53,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         sendMessage.setParseMode(ParseMode.MARKDOWNV2);
 
         SortService sortService = new SortService(message.getText(), sendMessage, update);
-        ConnectService connectService = new ConnectService(message.getChatId().toString());
+        connectService = new ConnectService(message.getChatId().toString());
 
         if (message.isCommand()){
             switch (message.getText()){
@@ -63,7 +66,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                 case "/date" -> sendMessage.setText(date); //вывод даты
                 case "/connect" -> {
                     sendMessage.setText("CONN");
-                    System.out.println(connectService.generateKey(chatId));
+                    firstConnection(chatId);
                 }
             }
         } else if (echo) {
@@ -78,8 +81,18 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         try {
             this.execute(sendMessage); // исполненение команды - отправка сообщения
+
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    public void firstConnection(String chatId){
+        try{
+            connectService.startConnection("localhost", 1233);
+            connectService.sendMessage(chatId);
+        } catch (Exception e) {
+            System.err.println(e);
         }
     }
 }

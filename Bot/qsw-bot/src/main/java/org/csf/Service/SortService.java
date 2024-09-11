@@ -93,7 +93,7 @@ public class SortService extends Service{
     public void dateParamMethod(Update update){
         switch(param2){
             case "-year" -> {
-                renameFile("file1.txt", "copy.txt"); //тестовая штука TODO
+                            renameFile("file1.txt", "copy.txt"); //тестовая штука TODO
             }
 
             case "-time" -> {
