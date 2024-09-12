@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="optimized work + new service">
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="connection established!!!!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/ConnectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/ConnectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/Service/SortService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723885475227</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="connection established!!!!!!">
+      <option name="closed" value="true" />
+      <created>1726044766977</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726044766978</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -160,12 +166,24 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="some lil stuff related with HTTP" />
     <MESSAGE value="gitignore added and lil improvements are done" />
     <MESSAGE value="-help parameter" />
     <MESSAGE value="comments and improvements" />
     <MESSAGE value="optimized work + new service" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized work + new service" />
+    <MESSAGE value="connection established!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection established!!!!!!" />
   </component>
 </project>

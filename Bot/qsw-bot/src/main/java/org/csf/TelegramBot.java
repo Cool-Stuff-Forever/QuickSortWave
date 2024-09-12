@@ -65,7 +65,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                 }
                 case "/date" -> sendMessage.setText(date); //вывод даты
                 case "/connect" -> {
-                    sendMessage.setText("CONN");
+                    sendMessage.setText("CONN"); //показывает что бот работает
                     firstConnection(chatId);
                 }
             }
@@ -87,10 +87,14 @@ public class TelegramBot extends TelegramLongPollingBot {
         }
     }
 
+    /**
+     * Первичная синхронизация ПК с ботом (без БД)
+     * @param chatId
+     */
     public void firstConnection(String chatId){
         try{
-            connectService.startConnection("localhost", 1233);
-            connectService.sendMessage(chatId);
+            connectService.startConnection("localhost", 1233); //подключаемся по IP
+            connectService.sendMessage(chatId); //отправляем свой chatId
         } catch (Exception e) {
             System.err.println(e);
         }
