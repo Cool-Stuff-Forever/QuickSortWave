@@ -14,20 +14,20 @@ import java.nio.file.Paths;
 import static org.csf.Constants.Constants.*;
 
 /**
- * Сервис для обработки параметров команды типа "/sort"
+ * Service handler for "sort-type" commands
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @RequiredArgsConstructor
 public class SortService extends Service{
-    public String param1; //параметр первого уровня
-    public String param2; //параметр второго уровня
-    protected final String message; //отправленное сообщение
-    protected final SendMessage sendMessage; //ответ бота
-    protected final Update update; //вся информация из сообщения
+    public String param1; //1st level parameter
+    public String param2; //2nd level parameter
+    protected final String message; //message sent
+    protected final SendMessage sendMessage; //bot's response
+    protected final Update update; //total info from message
 
     /**
-     * Определение параметров
+     * Parameter defining method
      */
     public void defineParams(){
         String[] messageData = this.getMessage().split(" ");
@@ -47,7 +47,7 @@ public class SortService extends Service{
     }
 
     /**
-     * Сверка параметров запроса
+     * Request parameter check
      */
     public void paramCheck(){
         this.defineParams();
@@ -64,11 +64,11 @@ public class SortService extends Service{
         }
     }
 
-    //v--------Методы для обработки запроса--------v
+    //v--------Methods of request handling--------v
 
     /**
-     * Помощь вв использовании параметров
-     * @param update - обновление с полной информацией
+     * Help in parameter usage
+     * @param update - new update with all info
      */
     public void helpParamMethod(Update update){
         String text = """
@@ -86,8 +86,8 @@ public class SortService extends Service{
     }
 
     /**
-     * Метод сортиривки по различным системам измерения времени
-     * @param update - обновление, чтобы достать что-нибудь важное
+     * Sort method by different time measuring
+     * @param update - an update to take something important
      */
     @SneakyThrows
     public void dateParamMethod(Update update){

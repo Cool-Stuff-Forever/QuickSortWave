@@ -13,6 +13,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.*;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.net.InetAddress;
 import java.util.Date;
 @Slf4j
 public class TelegramBot extends TelegramLongPollingBot {
@@ -93,7 +94,7 @@ public class TelegramBot extends TelegramLongPollingBot {
      */
     public void firstConnection(String chatId){
         try{
-            connectService.startConnection("localhost", 1233); //подключаемся по IP
+            connectService.startConnection(InetAddress.getByName("quicksortwave.duckdns.org"), 1233); //подключаемся по IP
             connectService.sendMessage(chatId); //отправляем свой chatId
         } catch (Exception e) {
             System.err.println(e);

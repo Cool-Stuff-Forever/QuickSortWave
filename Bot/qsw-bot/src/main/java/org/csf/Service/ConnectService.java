@@ -4,6 +4,7 @@ import lombok.Data;
 import org.apache.commons.codec.digest.DigestUtils;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.Socket;
 
 @Data
@@ -13,28 +14,28 @@ public class ConnectService{
     private DataOutputStream dataoutputStream;
 
     /**
-     * Метод для установки соединения
-     * @param ip - адресс
-     * @param port - порт сервера
+     * Connection method
+     * @param ip - address
+     * @param port - server port
      * @throws IOException
      */
-    public void startConnection(String ip, int port) throws IOException {
-        clientSocket = new Socket(ip, port); //нужен для соединения
-        dataoutputStream = new DataOutputStream(clientSocket.getOutputStream()); //подготовка буфера к отправке
+    public void startConnection(InetAddress ip, int port) throws IOException {
+        clientSocket = new Socket(ip, port); //necessary for connection
+        dataoutputStream = new DataOutputStream(clientSocket.getOutputStream()); //buffer preparation for sending
     }
 
     /**
-     * Отправка сообщения на сервер
-     * @param message - содержание сообщения
+     * Sending message on a server
+     * @param message - message content
      * @throws IOException
      */
     public void sendMessage(String message) throws IOException {
-        dataoutputStream.writeUTF(message); //отправка сообщения
-        dataoutputStream.flush(); //что-то типо быстрой очистки буфера после отправки сообщения
-        dataoutputStream.close(); //завершение соединения
+        dataoutputStream.writeUTF(message); //sending
+        dataoutputStream.flush(); //something like a quick clean after buffer sending
+        dataoutputStream.close(); //connection interruption
     }
 
-    //TODO: сделать подключение по ключу
+    //TODO: make it possible to connect with key
     public String generateKey(String chatId){
         return DigestUtils.sha256Hex(chatId);
     }

@@ -9,7 +9,7 @@ import java.net.Socket;
 
 
 /**
- * Тестовый класс для проверки создания сервера
+ * Class for testing server connection
  */
 @Data
 public class Server {
@@ -28,7 +28,7 @@ public class Server {
     public static void main(String[] args) {
         Server ser = new Server();
         try {
-            ser.start(1233); //стартуем сервак на 1233 порту
+            ser.start(1233); //server start on 1233
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

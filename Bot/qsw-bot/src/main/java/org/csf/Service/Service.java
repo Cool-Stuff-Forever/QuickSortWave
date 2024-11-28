@@ -2,9 +2,9 @@ package org.csf.Service;
 
 public class Service {
     /**
-     * Метод простой обработки сообщений
-     * @param text неотформатированный текст
-     * @return готовое сообщение
+     * Simple function to format messages
+     * @param text - non-formatted text
+     * @return compiled message
      */
     public String buildTheMessage(String text){
         return text.replaceAll("\\.", "\\\\.")
