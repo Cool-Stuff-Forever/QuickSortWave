@@ -1,13 +1,18 @@
 # QuickSortWave
 QuickSortWave is a powerful yet simple tool designed to help you organize your digital workspace. It ensures everything stays in order by renaming and categorizing files and folders.
 
+## Features
+- <mark>Cross platform usage</mark>: You can manage your files directly on your PC or from your smartphone.
+- <mark>Easy to use</mark>: Our bot is really understandable and if you have some problems you don't have to worry about answers because we insist on doing a good specification.
+- <mark>Customisable sorting patterns</mark>: If you want to personalise your files there is no issue to make a pattern that will suit you!
+
 ## Schematic structure
 ***link***
 
 ## Service instances
 - **PC** – *QuickSortWave* Java tool (application that access files to interact with them)
 - **Smartphone** – *QuickSortWave* Telegram bot ([@CSF_bot](https://t.me/CoolSFer_bot) where you can access "sort" command)
-- **Server** – ***OUR*** server which is used like API to handle requests (here Altervista server)
+- **Server** – ***OUR*** server which is used like API to handle requests (Altervista server)
 
 ## Contribution requirements
 
