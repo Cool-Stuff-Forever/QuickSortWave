@@ -1,5 +1,5 @@
 # QuickSortWave
-This is a really useful project. Our main goal is to make a simple service that will be able to organise files and folders by changing their names.
+QuickSortWave is a powerful yet simple tool designed to help you organize your digital workspace. It ensures everything stays in order by renaming and categorizing files and folders.
 
 ## Schematic structure
 ***link***
