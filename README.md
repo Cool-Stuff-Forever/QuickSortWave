@@ -1,6 +1,6 @@
 # QuickSortWave
-### It will make you organised
-This is a really useful project. Our main goal is to make a simple service that will be able to organise files and folders by changing their names.
+>### It will make you organised
+>This is a really useful project. Our main goal is to make a simple service that will be able to organise files and folders by changing their names.
 
 ## Schematic structure
 ***link***
