@@ -22,7 +22,7 @@ import static org.csf.Constants.Constants.*;
 public class SortService extends Service{
     public String param1; //1st level parameter
     public String param2; //2nd level parameter
-    protected final String message; //message sent
+    protected final String message; //message sent to bot
     protected final Update update; //total info from message
     protected final SendMessage sendMessage; //bot's response
 
