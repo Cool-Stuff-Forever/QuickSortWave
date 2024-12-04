@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="server tester + comments">
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="comments in eng v0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/ConnectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/ConnectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/csf/TelegramBot.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726166149119</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="comments in eng v0.1">
+      <option name="closed" value="true" />
+      <created>1732780189467</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732780189467</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -214,17 +216,7 @@
     <MESSAGE value="optimized work + new service" />
     <MESSAGE value="connection established!!!!!!" />
     <MESSAGE value="server tester + comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="server tester + comments" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/csf/Service/SortService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="comments in eng v0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments in eng v0.1" />
   </component>
 </project>

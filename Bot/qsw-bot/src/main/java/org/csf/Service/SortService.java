@@ -23,8 +23,8 @@ public class SortService extends Service{
     public String param1; //1st level parameter
     public String param2; //2nd level parameter
     protected final String message; //message sent
-    protected final SendMessage sendMessage; //bot's response
     protected final Update update; //total info from message
+    protected final SendMessage sendMessage; //bot's response
 
     /**
      * Parameter defining method
@@ -64,7 +64,7 @@ public class SortService extends Service{
         }
     }
 
-    //v--------Methods of request handling--------v
+    //v--------Methods for request handling--------v
 
     /**
      * Help in parameter usage
@@ -72,14 +72,14 @@ public class SortService extends Service{
      */
     public void helpParamMethod(Update update){
         String text = """
-                *QuickSortWave* - удобный сортировщик файлов
-                Для использования команды /sort существуют следующие параметры:
-                -help - выводит информацию о параметре уровня
-                -date - сортировка файлов по дате
-                -type - выборочная сортировка по типу файла(фото, видео и т.д.)
-                -extension - выборочная сортировка по расширению файла
-                -size - выборочная сортировка по размеру файла
-                _для информации по параметрам второго уровня используйте 1 параметр(~help~) и напишите -help_
+                *QuickSortWave* - efficient file-sorting program
+                To use /sort command there are some parameters:
+                -help - returns help information for 1st level parameter
+                -date - sort files by date
+                -type - selective sorting by file type(photo, video and etc.)
+                -extension - selective sorting by file extension
+                -size - selective sorting by file size
+                _to see help information about 2nd level parameters use one 1st level parameter(~help~) and type -help_
                 """;
 
         sendMessage.setText(buildTheMessage(text));
@@ -114,10 +114,10 @@ public class SortService extends Service{
     }
 
     /**
-     * Переименовка файла
-     * @param file - имя старого файла
-     * @param copy - имя новой копии
-     * @throws IOException - для работы с файлами нужно это пробросить
+     * File-renaming method
+     * @param file - old filename
+     * @param copy - new filename
+     * @throws IOException - essential to work with files
      */
     public void renameFile(String file, String copy) throws IOException {
         Path source = Paths.get("src/main/java/org/csf/Service/sort", file);
