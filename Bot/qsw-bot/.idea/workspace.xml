@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="comments in eng v0.1">
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="comments in eng completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/API/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/API/API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Server.executor": "Run",
-    "Maven.Unknown [clean].executor": "Run",
-    "Maven.Unknown [install].executor": "Run",
-    "Maven.Unknown [verify].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "34-api-bot-request",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/chewedmole/Documents/Projects/QuickSortWave/Bot/qsw-bot",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.39310345",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Server.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;34-api-bot-request&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/chewedmole/Documents/Projects/QuickSortWave/Bot/qsw-bot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.39310345&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/csf/Constants" />
@@ -184,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732780189467</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="comments in eng sortService v0.2">
+      <option name="closed" value="true" />
+      <created>1733325774079</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733325774080</updated>
+    </task>
+    <task id="LOCAL-00011" summary="comments in eng completed">
+      <option name="closed" value="true" />
+      <created>1733326530152</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733326530152</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -217,6 +237,8 @@
     <MESSAGE value="connection established!!!!!!" />
     <MESSAGE value="server tester + comments" />
     <MESSAGE value="comments in eng v0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments in eng v0.1" />
+    <MESSAGE value="comments in eng sortService v0.2" />
+    <MESSAGE value="comments in eng completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments in eng completed" />
   </component>
 </project>
