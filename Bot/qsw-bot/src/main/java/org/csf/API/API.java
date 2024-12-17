@@ -22,12 +22,11 @@ public class API {
     public static void requestMethod(){
         String hostname = "ftp.quicksortwave.altervista.org";
         String user = "quicksortwave";
-        String pass = "VvXe7q3tEthF";
+        String pass = "";
         int port = 21;
         FTPClient ftp = new  FTPClient();
         //GET
         try{
-
             ftp.connect(hostname, port);
             ftp.login(user, pass);
             FileOutputStream outputStream = new FileOutputStream("index.html"); //filepath to save a new file somewhere
@@ -41,8 +40,9 @@ public class API {
         try{
             ftp.connect(hostname, port);
             ftp.login(user, pass);
-            FileInputStream inputStream = new FileInputStream("message.txt"); //filepath to initial file
-            ftp.appendFile("message.txt", inputStream);
+            FileInputStream inputStream = new FileInputStream("transfer/message.txt"); //filepath to initial file
+            ftp.makeDirectory("transfer");
+            ftp.appendFile("transfer/message.txt", inputStream);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

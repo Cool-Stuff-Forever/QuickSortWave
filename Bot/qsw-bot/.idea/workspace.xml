@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="comments in eng completed">
+    <list default="true" id="d031181c-aa4e-42f3-8d9b-d88654c09416" name="Changes" comment="ftp works v0.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/transfer/message.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/API/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/API/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/csf/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/csf/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +70,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/csf/Encryption" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/transfer" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/sort" />
     </key>
@@ -204,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733326530152</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ftp works v0.2">
+      <option name="closed" value="true" />
+      <created>1734448075401</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734448075401</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -239,6 +247,7 @@
     <MESSAGE value="comments in eng v0.1" />
     <MESSAGE value="comments in eng sortService v0.2" />
     <MESSAGE value="comments in eng completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments in eng completed" />
+    <MESSAGE value="ftp works v0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ftp works v0.2" />
   </component>
 </project>
