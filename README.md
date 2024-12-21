@@ -7,7 +7,7 @@ QuickSortWave is a powerful yet simple tool designed to help you organize your d
 - <mark>Customisable sorting patterns</mark>: If you want to personalise your files there is no issue to make a pattern that will suit you!
 
 ## Schematic structure
-***link***
+![Working scheme](https://github.com/Cool-Stuff-Forever/QuickSortWave/blob/about/resources/quicksortwave_scheme.svg)
 
 ## Service instances
 - **PC** – *QuickSortWave* Java tool (application that access files to interact with them)
