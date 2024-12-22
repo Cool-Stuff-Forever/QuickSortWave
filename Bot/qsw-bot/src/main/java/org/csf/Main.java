@@ -1,8 +1,6 @@
 package org.csf;
 
-
-import org.csf.API.API;
-import org.csf.Service.ConnectService;
+import org.csf.API.FTP;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
@@ -12,6 +10,6 @@ public class Main {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         telegramBotsApi.registerBot(new TelegramBot()); //bot's initialization
 
-        API.requestMethod();
+        FTP.getMethod();
     }
 }
