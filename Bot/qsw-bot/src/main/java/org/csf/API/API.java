@@ -7,6 +7,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class API {
+    protected static final String hostname = "ftp.quicksortwave.altervista.org";
+    protected static final int port = 21;
+    protected static final String user = "quicksortwave";
+    protected static final String pass = "";
+    static FTPClient ftp = new  FTPClient();
 
     public void responseMethod(String chatId, String method, String response){
         try {
@@ -20,29 +25,8 @@ public class API {
     }
 
     public static void requestMethod(){
-        String hostname = "ftp.quicksortwave.altervista.org";
-        String user = "quicksortwave";
-        String pass = "";
-        int port = 21;
-        FTPClient ftp = new  FTPClient();
-        //GET
-        try{
-            ftp.connect(hostname, port);
-            ftp.login(user, pass);
-            FileOutputStream outputStream = new FileOutputStream("index.html"); //filepath to save a new file somewhere
-            ftp.retrieveFile("index.html", outputStream);
-
-        }catch (Exception e){
-            System.err.println(e);
-        }
-
-        //POST
-        try{
-            ftp.connect(hostname, port);
-            ftp.login(user, pass);
-            FileInputStream inputStream = new FileInputStream("transfer/message.txt"); //filepath to initial file
-            ftp.makeDirectory("transfer");
-            ftp.appendFile("transfer/message.txt", inputStream);
+        try {
+            FTP.getMethod();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
