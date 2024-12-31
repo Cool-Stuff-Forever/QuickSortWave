@@ -12,13 +12,15 @@ public class FTP {
     protected static final String pass = "";
     static FTPClient ftp = new  FTPClient();
 
+    protected static final String exchangePath = "src/main/java/org/csf/Service/transfer";
+
     public void postMethod(){
         try{
             ftp.connect(hostname, port);
             ftp.login(user, pass);
-            FileInputStream inputStream = new FileInputStream("transfer/message.txt"); //filepath to initial file
-            ftp.makeDirectory("transfer");
-            ftp.appendFile("transfer/message.txt", inputStream);
+            FileInputStream inputStream = new FileInputStream(exchangePath + "/message.txt"); //filepath to initial file
+            ftp.makeDirectory(exchangePath);
+            ftp.appendFile(exchangePath + "/message.txt", inputStream);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -28,7 +30,7 @@ public class FTP {
         try{
             ftp.connect(hostname, port);
             ftp.login(user, pass);
-            FileOutputStream outputStream = new FileOutputStream("index.html"); //filepath to save a new file somewhere
+            FileOutputStream outputStream = new FileOutputStream(exchangePath + "/response.txt"); //filepath to save a new file somewhere
             ftp.retrieveFile("index.html", outputStream);
 
         }catch (Exception e){
