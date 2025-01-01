@@ -35,10 +35,10 @@ public class ConnectService{
         dataoutputStream.close(); //connection interruption
     }
 
-    //TODO: make it possible to connect with key
-    public String generateKey(String chatId){
-        return DigestUtils.sha256Hex(chatId);
-    }
+    /*TODO - make this class useful by applying some changes:
+        1)establish connection with a local encryption server
+        2)optimize internet traffic data transfer and encryption
+    */
 
 
 }

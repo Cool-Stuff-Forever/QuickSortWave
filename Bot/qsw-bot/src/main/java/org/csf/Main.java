@@ -10,6 +10,6 @@ public class Main {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         telegramBotsApi.registerBot(new TelegramBot()); //bot's initialization
 
-        FTP.getMethod();
+        //FTP.getMethod();
     }
 }
