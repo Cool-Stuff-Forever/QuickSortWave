@@ -1,10 +1,8 @@
 package org.csf;
 
-import lombok.Builder;
-import lombok.Data;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.csf.API.TestController;
+import org.csf.Controllers.TestController;
 import org.csf.Service.ConnectService;
 import org.csf.Service.SortService;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
